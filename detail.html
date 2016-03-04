@@ -1,0 +1,273 @@
+<div id="smartphoneModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+
+      <div class="modal-body" style="height:650px;">
+        <button class="btn pull-right" style="font-size:35px; color:#FF5722; margin:-20px; background-color:transparent;" type="button"  data-dismiss="modal">
+          <span  class="glyphicon glyphicon-remove-circle"></span>
+        </button>
+        <div style="margin-top:20px;">
+
+          <div class="col-md-3" style="text-align:center;">
+            <img id="image" class='image-detail' src="./img/phone.png" width="120px" height="150px"></img>
+          </div>
+          <div  class="col-md-7">
+            <h3 id="model">Smartphone model</h3>
+            <p id="description">Product description</p>
+          </div>
+
+          <div  class="col-md-2" style="text-align:right; padding-top:20px;">
+            <p>
+              <span >From: &nbsp; <a class="a-green" id="best_price_vendor" href="#" target="_blank"> Vendor </a></span>
+              <span id="price" style="font-size:30px; color:#FF5722;" >$Price</span>
+              <span>Free Shipping</span>
+              <div id="stars_best" style="font-size:15px; color:#FF5722;">
+
+              </div>
+              <div class="checkbox">
+                <label><input id="compare_detail" class="checkbox-compare" data-id="" data-model="" data-url="" type="checkbox" value="" >Compare</label>
+
+              </div>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-12" style="margin-top:30px;">
+          <div class="panel with-nav-tabs panel-default">
+            <div class="panel-heading">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab1default" data-toggle="tab">Vendors</a></li>
+                <li><a href="#tab2default" data-toggle="tab">Specs</a></li>
+                <li><a href="#tab3default" data-toggle="tab">Reviews</a></li>
+                <li><a href="#tab4default" data-toggle="tab">Pros/Cons</a></li>
+              </ul>
+            </div>
+            <div class="panel-body">
+              <div class="tab-content">
+
+
+                <div class="tab-pane fade in active" id="tab1default"><table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Rating</th>
+                      <th>Details</th>
+                      <th>Total price</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody id="vendor_list">
+
+                  </tbody>
+                </table>
+
+              </div>
+
+              <div class="tab-pane fade" id="tab2default">
+                <div class="mygrid-wrapper-div">
+
+                  <table class="table" style="text-align:left;">
+                    <thead>
+                      <tr >
+                        <th style="text-align:left; font-size:18px; width: 50%;  width: 25%;">Design</th>
+                        <th style="text-align:left; font-size:18px; width: 50%;  width: 25%;"></th>
+                        <th style="text-align:left; font-size:18px; width: 50%;  width: 25%;">Camera</th>
+                        <th style="text-align:left; font-size:18px; width: 50%;  width: 25%;"></th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td style="background-color:#f5f5f5">Screen size</td>
+                        <td id="screen_size">-</td>
+                        <td style="background-color:#f5f5f5">Camera</td>
+                        <td id="camera">-</td>
+
+                      </tr>
+                      <tr>
+                        <td style="background-color:#f5f5f5">Weight</td>
+                        <td id="weight">-</td>
+                        <td style="background-color:#f5f5f5">Flash</td>
+                        <td id="flash">-</td>
+
+                      </tr>
+                      <tr>
+                        <td style="background-color:#f5f5f5">Colors</td>
+                        <td id="colors">-</td>
+                        <td style="background-color:#f5f5f5">Front facing camera</td>
+                        <td id="front_face_camera">-</td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  <table class="table" style="text-align:left;">
+                    <thead>
+                      <tr >
+                        <th style="text-align:left; font-size:18px; width: 50%;  width: 25%;">Hardware</th>
+                        <th style="text-align:left; font-size:18px; width: 50%;  width: 25%;"></th>
+                        <th style="text-align:left; font-size:18px; width: 50%;  width: 25%;">Battery</th>
+                        <th style="text-align:left; font-size:18px; width: 50%;  width: 25%;"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="background-color:#f5f5f5">Processor</td>
+                        <td id="processor">-</td>
+                        <td style="background-color:#f5f5f5">Talk time</td>
+                        <td id="talk_time">-</td>
+
+                      </tr>
+                      <tr>
+                        <td style="background-color:#f5f5f5">System Memory</td>
+                        <td id="system_memory">-</td>
+                        <td style="background-color:#f5f5f5">Video playback</td>
+                        <td id="video_playback">-</td>
+
+                      </tr>
+                      <tr>
+                        <td style="background-color:#f5f5f5">Built-in storage</td>
+                        <td id="builtin_storage">-</td>
+                        <td style="background-color:#f5f5f5">Capacity</td>
+                        <td id="capacity">-</td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+
+                  <table class="table" style="text-align:left;">
+                    <thead>
+                      <tr >
+                        <th style="text-align:left; font-size:18px; width: 25%; ">Technology</th>
+                        <th style="text-align:left; font-size:18px; width: 25%; "></th>
+                        <th style="text-align:left; font-size:18px; width: 25%; border:none"></th>
+                        <th style="text-align:left; font-size:18px; width: 25%; border:none"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="background-color:#f5f5f5">Data</td>
+                        <td id="data">-</td>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+
+                      </tr>
+                      <tr>
+                        <td style="background-color:#f5f5f5">Storage expasion</td>
+                        <td id="storage_expansion">-</td>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+
+                      </tr>
+                      <tr>
+                        <td style="background-color:#f5f5f5">Android version</td>
+                        <td id="android_version">-</td>
+                        <td style="border:none"></td>
+                        <td style="border:none"></td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab3default">
+                <div class="mygrid-wrapper-div">
+                <table class="table" style="text-align:left;">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center; background-color:#b2dfdb;width: 50%;">Best</th>
+                      <th style="text-align:center; background-color:#ffcccc;width: 50%;">Worst</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="review_row_one">
+
+
+                    </tr>
+                    <tr id="review_row_two">
+
+                    </tr>
+
+                    <tr id="review_row_three">
+                      <td>
+                        <div class="col-md-12" style="padding:0px;">
+
+                          <div id="stars_good_review_two" style="font-size:15px; color:#FF5722; text-align:left;">
+
+                          </div>
+
+                        </div>
+                        <div class="col-md-12" style="padding:0px;">
+                          <span id="good_review_two">Good review three</span>
+                        </div>
+
+
+                      </td>
+                      <td>
+                        <div class="col-md-12" style="padding:0px;">
+
+                          <div id="stars_bad_review_three" style="font-size:15px; color:#FF5722; text-align:left;">
+
+                          </div>
+
+                        </div>
+                        <div class="col-md-12" style="padding:0px;">
+                          <span id="bad_review_three">Bad review three</span>
+                        </div>
+
+                      </td>
+
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              </div>
+
+              <div class="tab-pane fade" id="tab4default">
+                <table class="table table-striped" style="text-align:center;">
+                  <thead>
+                    <tr>
+                      <th style="text-align:center; background-color:#b2dfdb; width: 50%;">Pros</th>
+                      <th style="text-align:center; background-color:#ffcccc; width: 50%;">Cons</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td id="pro_one">Pro One</td>
+                      <td id="con_one">Con Two</td>
+
+                    </tr>
+                    <tr>
+                      <td id="pro_two">Pro Two</td>
+                      <td id="con_two">Con Two</td>
+
+                    </tr>
+                    <tr>
+                      <td id="pro_three">Pro Three</td>
+                      <td id="con_three">Con Three</td>
+
+                    </tr>
+
+                  </tbody>
+                </table>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+</div>

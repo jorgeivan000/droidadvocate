@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DroidAdvocate</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/shop-item.css" rel="stylesheet">
+  <link href="./css/panel.css" rel="stylesheet">
+  <link href="./css/droidadvocate.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+
+
+
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+
+
+
+
+        <a class="navbar-brand col-md-2" href="./index.html"><b>DroidAdvocate</b></a>
+
+        <div class="form-group col-md-2" style="margin-top:10px;">
+          <select id="facet_query" class="form-control">
+            <option value="all">All</option>
+            <option value="bd">Best deals</option>
+            <option value="he">High end</option>
+            <option value="af">Affordable</option>
+            <option value="re">Recommended</option>
+            <option value="ph">Phablet</option>
+            <option value="cp">Compact</option>
+            <option value="mr">Most reviewed</option>
+          </select>
+        </div>
+
+        <div id="custom-search-input" class="col-md-6" style="margin-top:10px;">
+          <div class="input-group ">
+            <input id="search_box" type="text" class="search-query form-control" placeholder="Search" />
+            <span class="input-group-btn">
+              <button id="search_button" class="btn btn-orange" type="button" >
+                <span class="glyphicon glyphicon-search"></span>
+              </button>
+            </span>
+
+
+          </div>
+        </div>
+
+        <div class="col-md-2 pull-right">
+          <table>
+            <tr>
+              <td>
+                <div class="dropdown">
+                  <button id="list_button" type="button" width="40px" class="btn btn-orange dropdown-toggle pull-right" data-toggle="dropdown" style="margin-top:10px;">Compare list (0)<span class="caret"></span></button>
+                  <div  class="dropdown-menu" style="width:200px; margin-top:43px; padding-top:10px; background-color:#f7f7f7;">
+                    <div id="compare_list">
+                    </div>
+                    <div style="height:40px; margin-top:10px;" class="col-md-12">
+                      <a class="btn btn-orange col-md-12" href="./compare.html">Compare now!</a>
+                    </div>
+                  </div>
+                </div>
+
+
+              </td>
+
+            </tr>
+            <tr>
+              <td>
+                <a href="./compare.html" class="a-white pull-right">Compare now!</a>
+              </td>
+            </tr>
+
+          </table>
+
+
+        </div>
+
+
+
+
+      </div>
+
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container" style="margin-top:20px;" >
+
+    <div class="row">
+
+      <div class="col-md-2 rightBorderDivider" >
+      </br>
+      <p class="lead">Brand</p>
+      <div class="list-group" style="padding-left:15px;">
+        <div class="checkbox">
+          <label><input class="brand-compare" type="checkbox" value="samsung">Samsung</label>
+        </div>
+        <div class="checkbox">
+          <label><input  class="brand-compare"type="checkbox" value="motorola">Motorola</label>
+        </div>
+        <div class="checkbox">
+          <label><input class="brand-compare" type="checkbox" value="lg">LG</label>
+        </div>
+        <div class="checkbox">
+          <label><input class="brand-compare" type="checkbox" value="htc">HTC</label>
+        </div>
+
+
+      </div>
+    </br>
+  </br>
+  <p class="lead">Screen Size</p>
+  <div class="list-group" style="padding-left:15px;">
+    <div class="checkbox">
+      <label><input class="size-compare" type="checkbox" value="big">More than 5.5in +</label>
+    </div>
+    <div class="checkbox">
+      <label><input class="size-compare" type="checkbox" value="mid">Between 4.5in - 5.5in</label>
+    </div>
+    <div class="checkbox">
+      <label><input class="size-compare"type="checkbox" value="sml">Less than 4.5in</label>
+    </div>
+
+  </div>
+</br>
+</br>
+<p class="lead">Vendor</p>
+<div class="list-group" style="padding-left:15px;">
+  <div class="checkbox">
+    <label><input class="vendor-compare"type="checkbox" value="amazon">Amazon</label>
+  </div>
+  <div class="checkbox">
+    <label><input class="vendor-compare"type="checkbox" value="bestbuy">Bestbuy</label>
+  </div>
+  <div class="checkbox">
+    <label><input class="vendor-compare" type="checkbox" value="newegg">Newegg</label>
+  </div>
+
+</div>
+
+
+</div>
+
+<div class="col-md-10">
+
+
+  <div id="filters"class="col-md-12 bottomBorderDivider" style="height:50px; margin-top:15px;">
+
+    <div class="col-md-8"><span style="font-size:14px;">From: $</label> <input id="budget_start" type="text" />&nbsp;&nbsp;<span style="font-size:14px;">To: $</span> <input id="budget_end"type="text"/> <button id="budget_filter_button" class="btn" style="max-height:25px;">Go</button></div>
+
+    <div class="col-md-2" style="margin-top:-5px; float:right">
+
+
+      <select id="order_select" class="form-control">
+        <option value="">Order by</option>
+        <option value="plh">Price Low-High</option>
+        <option value="phl">Price High-Low</option>
+        <option value="rev">Reviews High-Low</option>
+      </select>
+
+
+    </div>
+
+
+  </div>
+
+  <div id="results" class="col-md-12" style="margin-top:15px; height:600px;">
+    There are no results available
+
+
+  </div>
+
+
+  <div class="col-md-12">
+    <div class="col-md-2">
+    </div>
+    <div id="pagination"  class="col-md-10" style="text-align:center;" >
+
+
+
+      <button id="first-pag"class="btn btn-orange b-pagination" data-page="0" style="margin:3px;" >First</button>
+      <button id="prev-pag" class="btn prev2 btn-orange b-pagination" data-page="" type="button" style="margin:3px;" >
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </button>
+
+      <div id="result_pages" style="margin:3px; display:inline;">
+
+      </div>
+      <button id="next-pag" class="btn prev2 btn-orange b-pagination" data-page="" type="button" style="margin:3px;" >
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </button>
+      <button id="last-pag" class="btn btn-orange b-pagination" data-page="" style="margin:3px;" >Last</button>
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<!-- /.container -->
+
+<div class="container">
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; DroidAdvocate 2016</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<!-- /.container -->
+
+<div id="smartphone_detail">
+
+</div>
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="./js/owl-carousel/owl.carousel.js"></script>
+<script src="js/util.js"></script>
+<script src="js/detail.js"></script>
+<script src="js/compare_list.js"></script>
+<script src="js/search.js"></script>
+<script>
+
+$(document).ready(function() {
+
+  $.get("detail.html", function(data){
+    $("#smartphone_detail").html(data);
+  });
+
+  $("#search_button").click(function() {
+    page=0;
+    border="";
+    order="";
+    search();
+  });
+
+  $("#search_box").keypress(function(e){
+    if(e.which == 13) {
+      page=0;
+      border="";
+      order="";
+      search();
+    }
+  });
+
+
+
+  $('.brand-compare').on('change', function() {
+    $('.brand-compare').not(this).prop('checked', false);
+    if ($(this).is(':checked')) {
+      brand=$(this).val();
+
+    }else{
+      brand='';
+    }
+
+    search();
+  });
+
+  $('.size-compare').on('change', function() {
+    $('.size-compare').not(this).prop('checked', false);
+    if ($(this).is(':checked')) {
+      ssize=$(this).val();
+
+    }else{
+      ssize='';
+    }
+
+    search();
+  });
+
+  $('.vendor-compare').on('change', function() {
+    $('.vendor-compare').not(this).prop('checked', false);
+    if ($(this).is(':checked')) {
+      vendor=$(this).val();
+
+    }else{
+      vendor='';
+    }
+
+    search();
+  });
+
+
+  $("#budget_filter_button").click(function() {
+    var budget_start=$("#budget_start").val();
+    var budget_end=$("#budget_end").val();
+    search();
+  });
+
+
+  $("#order_select").change(function() {
+    //setUrlParameter("pg",$(this).attr('data-page'));
+
+    order = $("#order_select").val();
+    search();
+  });
+
+  $(".b-pagination").click(function(event) {
+    event.preventDefault();
+    //setUrlParameter("pg",$(this).attr('data-page'));
+
+    page = $(this).attr('data-page');
+    search();
+  });
+
+  loadCompareList();
+  loadInputParameters();
+
+});
+</script>
+
+
+
+</body>
+
+</html>

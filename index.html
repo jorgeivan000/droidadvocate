@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>DroidAdvocate</title>
+
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/shop-item.css" rel="stylesheet">
+
+  <!-- Owl Carousel Assets -->
+  <link href="./css/owl-carousel/owl.carousel.css" rel="stylesheet">
+  <link href="./css/owl-carousel/owl.theme.css" rel="stylesheet">
+  <link href="./css/owl-carousel/prettify.css" rel="stylesheet">
+  <link href="./css/panel.css" rel="stylesheet">
+  <link href="./css/droidadvocate.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+
+
+
+
+        <a class="navbar-brand col-md-2" href="./index.html"><b>DroidAdvocate</b></a>
+
+        <div class="form-group col-md-2" style="margin-top:10px;">
+          <select id="facet_query" class="form-control">
+            <option value="all">All</option>
+            <option value="bd">Best deals</option>
+            <option value="he">High end</option>
+            <option value="af">Affordable</option>
+            <option value="re">Recommended</option>
+            <option value="ph">Phablet</option>
+            <option value="cp">Compact</option>
+            <option value="mr">Most reviewed</option>
+          </select>
+        </div>
+
+        <div id="custom-search-input" class="col-md-6" style="margin-top:10px;">
+          <div class="input-group ">
+
+            <input id="search_box" type="text" class="  search-query form-control" placeholder="Search" />
+            <span class="input-group-btn">
+              <a id="search_button" class="btn btn-orange">
+                <span class="glyphicon glyphicon-search"></span>
+              </a>
+            </span>
+
+
+          </div>
+        </div>
+
+        <div class="col-md-2 pull-right">
+          <table>
+            <tr>
+              <td>
+                <div class="dropdown">
+                  <button id="list_button" type="button" width="40px" class="btn btn-orange dropdown-toggle pull-right" data-toggle="dropdown" style="margin-top:10px;">Compare list (0)<span class="caret"></span></button>
+                  <div  class="dropdown-menu" style="width:200px; margin-top:43px; padding-top:10px; background-color:#f7f7f7;">
+                    <div id="compare_list">
+                    </div>
+                    <div style="height:40px; margin-top:10px;" class="col-md-12">
+                      <a class="btn btn-orange col-md-12" href="./compare.html">Compare now!</a>
+                    </div>
+                  </div>
+                </div>
+
+
+              </td>
+
+            </tr>
+            <tr>
+              <td>
+                <a href="./compare.html" class="a-white pull-right">Compare now!</a>
+              </td>
+            </tr>
+
+          </table>
+
+
+        </div>
+
+
+
+
+      </div>
+
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container" style="margin-top:20px;" >
+
+    <div class="row">
+
+      <div class="col-md-2 rightBorderDivider" style="height:600px;">
+      </br>
+      <p class="lead">Categories</p>
+      <div class="list-group">
+        <a href="./search.html?fct=bd" class="list-gp-item"><span class="glyphicon glyphicon-tag"></span>&nbsp;&nbsp;Best deals</a>
+        <a href="./search.html?fct=he" class="list-gp-item"><span class="glyphicon glyphicon-star"></span>&nbsp;&nbsp;High end</a>
+        <a href="./search.html?fct=af" class="list-gp-item"><span class="glyphicon glyphicon-usd"></span>&nbsp;&nbsp;Affordable</a>
+        <a href="./search.html?fct=re" class="list-gp-item"><span class="glyphicon glyphicon-ok-circle"></span>&nbsp;&nbsp;Recommended</a>
+        <a href="./search.html?fct=ph" class="list-gp-item "><span class="glyphicon glyphicon-resize-full"></span>&nbsp;&nbsp;Phablets</a>
+        <a href="./search.html?fct=cp" class="list-gp-item"><span class="glyphicon glyphicon-resize-small"></span>&nbsp;&nbsp;Compact</a>
+        <a href="./search.html?fct=mr" class="list-gp-item "><span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;Most reviewed</a>
+      </div>
+    </div>
+
+    <div class="col-md-10">
+
+
+
+      <div id="demo">
+        <div class="col-md-12"><h3>Best deals</h3></div>
+        <div class="col-md-12">
+
+          <div class="col-md-1">
+            <div class="customNavigation" style="text-align:center; margin-top:55px;">
+
+              <button class="btn prev btn-orange" type="button">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </button>
+            </div>
+
+          </div>
+          <div class="col-md-10">
+            <div id="carousel-bestdeals" class="owl-carousel">
+            </div>
+          </div>
+
+          <div class="col-md-1">
+            <div class="customNavigation" style="text-align:center; margin-top:55px;">
+              <button class="btn next btn-orange" type="button">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </button>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div id="demo2">
+        <div class="col-md-12"><h3>Most Reviewed</h3></div>
+        <div class="col-md-12">
+
+          <div class="col-md-1">
+            <div class="customNavigation" style="text-align:center; margin-top:55px;">
+              <button class="btn prev2 btn-orange" type="button">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </button>
+
+            </div>
+
+          </div>
+          <div class="col-md-10">
+            <div id="carousel-recommended" class="owl-carousel">
+            </div>
+
+
+          </div>
+
+          <div class="col-md-1">
+            <div class="customNavigation" style="text-align:center; margin-top:55px;">
+              <button class="btn next2 btn-orange" type="button">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+    </div>
+
+  </div>
+
+</div>
+<!-- /.container -->
+
+<div class="container">
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; DroidAdvocate 2016</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<!-- /.container -->
+
+
+
+
+<div id="smartphone_detail">
+
+</div>
+
+
+
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="./js/owl-carousel/owl.carousel.js"></script>
+<script src="js/carousel-deals.js"></script>
+<script src="js/util.js"></script>
+<script src="js/detail.js"></script>
+<script src="js/compare_list.js"></script>
+
+<script>
+$(document).ready(function() {
+
+  loadCompareList();
+
+  $.get("detail.html", function(data){
+    $("#smartphone_detail").html(data);
+  });
+
+  $("#search_button").click(function(){
+    var keywords= $("#search_box").val();
+    var facet= $("#facet_query").val();
+    window.location.href = "http://ec2-52-37-39-224.us-west-2.compute.amazonaws.com/droidadvocate/search.html?key="+keywords+"&fct="+facet;
+    //window.location.href = "http://localhost/droidadvocate/search.html?key="+keywords+"&fct="+facet;
+
+  });
+
+  $("#search_box").keypress(function(event){
+    if(event.which == 13) {
+    var keywords= $("#search_box").val();
+    var facet= $("#facet_query").val();
+    window.location.href = "http://ec2-52-37-39-224.us-west-2.compute.amazonaws.com/droidadvocate/search.html?key="+keywords+"&fct="+facet;
+    //window.location.href = "http://localhost/droidadvocate/search.html?key="+keywords+"&fct="+facet;
+    }
+  });
+
+
+  getBestDeals();  //This function calls the API in order to get the best deals (Located in carousel-deals)
+  getMostRecommended(); //This function calls the API in order to get the most recommended deals (Located in carousel-deals)
+
+});
+</script>
+
+
+
+
+
+</body>
+
+</html>

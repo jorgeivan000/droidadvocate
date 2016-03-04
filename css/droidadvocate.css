@@ -1,0 +1,123 @@
+.btn-orange {
+  color: white;
+  background-color: #FF5722;
+  border-style:none;
+}
+
+.btn-orange:hover,.btn-orange:focus, .btn-orange:active{
+  color: white;
+  background-color: #e54c1e;
+  border-style:none;
+}
+
+.btn-green {
+  color: white;
+  background-color: #008175;
+  border-style:none;
+}
+
+.btn-green:hover,.btn-green:focus, .btn-green:active{
+  color: white;
+  background-color: #006a60;
+  border-style:none;
+}
+
+.list-gp-item {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  background-color: #fff;
+  color:#727272;
+  /*border: 1px solid #ddd;*/
+}
+
+.list-gp-item:hover,.list-gp-item:focus,.list-gp-item:active {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  color:#009688;
+  text-decoration: none;
+  border-left: 1px solid #009688;
+  border-right: 1px solid #009688;
+  border-top: none;
+  border-bottom: none;
+}
+
+.a-white {
+  color: white;
+}
+
+.a-white:hover {
+  color: white;
+  text-decoration: underline white;
+}
+
+.a-green {
+  color: #008175;
+}
+
+.a-green:hover {
+  color: #006a60;
+  text-decoration: underline 005951;
+}
+
+.bottomBorderDivider {
+  border: 1px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-color: #ddd;
+}
+
+.rightBorderDivider {
+  border: 1px;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-color: #ddd;
+}
+
+.tableBorderDivider {
+  border: 1px;
+  border-style: solid;
+  border-top: 0px;
+  border-color: #ddd;
+}
+
+.fullBorderDivider {
+  border: 1px;
+  border-style: solid;
+  border-color: #ddd;
+}
+
+.sidesBorderDivider {
+  border: 1px;
+  border-style: solid;
+  border-top: 0px;
+  border-bottom: 0px;
+  border-color: #ddd;
+}
+
+.image-carousel {
+  max-width: 125px;
+  max-height: 130px;
+}
+
+.image-detail {
+  max-width: 75px;
+  max-height: 150px;
+}
+
+.mygrid-wrapper-div {
+  overflow: scroll;
+  max-height: 300px;
+}
+.td-small-text {
+  font-size: 10px;
+  height: 31px;
+  margin-bottom: 0px;
+}

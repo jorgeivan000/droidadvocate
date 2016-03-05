@@ -27,6 +27,8 @@
 
         }
 
+
+
       });
       return html_code;
 
@@ -39,6 +41,7 @@
         if(typeof data !== 'undefined'){
         loadPagination(data);
         $('#results').html(getResultsHTML(data));
+        toggleCompareList();
         //var id = $(this).attr('data-id');
         //var model = $(this).attr('data-model');
         //var url = $(this).attr('data-url');

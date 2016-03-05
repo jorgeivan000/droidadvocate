@@ -385,7 +385,7 @@ $(document).ready(function() {
     window.location.href = "http://ec2-52-37-39-224.us-west-2.compute.amazonaws.com/droidadvocate/search.html?key="+keywords+"&fct="+facet;
   });
 
-  $("##search_box").keypress(function(e){
+  $("#search_box").keypress(function(e){
     if(e.which == 13) {
     var keywords= $("#search_box").val();
     var facet= $("#facet_query").val();
